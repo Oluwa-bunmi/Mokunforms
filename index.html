@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML forms</title>
+    <link rel="icon" type="image/x-icon" href="/WallpaperGirly.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" placeholder="First" id="fname" name="fname" required>
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="Last" id="lname" name="lname">
+        <br>
+        <br>
+        <label for="phone">Phone Number</label>
+        <input type="number" id="phone" placeholder="### ### ###" name="phone">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email" name="email">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <br>
+        <br>
+        <label for="study">Course</label>
+        <select name="study" id="study">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Bootstrap" selected>Bootstrap</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+        <br>
+        <br>
+        <label for="message">Message:</label>
+        <br>
+        <br>
+        <textarea name="message" id="message" cols="70" rows="10"></textarea>
+        <br>
+        <input type="radio" name="mobile" id="car" value="CAR">
+        <label for="car">CAR</label>
+        <br>
+        <input type="radio" name="mobile" id="plane" value="AIRPLANE">
+        <label for="plane">AIRPLANE</label>
+        <br>
+        <input type="radio" name="mobile" id="boat">
+        <label for="boat">BOAT</label>
+        <br>
+        <input type="checkbox" name="remember" id="remember">
+        <label for="remember">Remember me</label>
+        <br>
+        <br>
+        <label for="date">Date of birth</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <br>
+        <label for="look">Search for a keyword</label>
+        <input type="search" name="look" id="look">
+        <br>
+        <br>
+        <label for="photo">Choose profile picture</label>
+        <input type="file" name="photo" id="photo">
+        <br>
+        <br>
+        <label for="bunmi">Price range</label>
+        <input type="range" name="bunmi" id="bunmi">
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+        <!--
+            This is a substitute for the code on line 71
+            <input type="submit" value="Submit"> -->
+    </form>
+
+</body>
+
+</html>
